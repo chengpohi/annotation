@@ -14,7 +14,6 @@ public class MyApp {
         for (Annotation annotation : annotations) {
             if (annotation.annotationType().equals(RestController.class)) {
                 System.out.println("Foo class have annotated by RestController annotation");
-
                 Method[] methods = Foo.class.getMethods();
                 for (Method method : methods) {
                     for (Annotation a : method.getAnnotations()) {
